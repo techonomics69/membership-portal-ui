@@ -1,8 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import PageLayout from './PageLayout';
 import StorePage from '../components/StorePage';
-
-const StorePageContainer = () => {
+import { addItem } from '../actions/storeActions'
+import { Button } from 'antd';
+const StorePageContainer = (props) => {
   return (
     <PageLayout>
       <StorePage />
@@ -10,4 +13,9 @@ const StorePageContainer = () => {
   );
 };
 
-export default StorePageContainer;
+const mapStateToProps = (state) => ({
+  cart: state.cart
+});
+export default connect(mapStateToProps, { addItem })(
+  StorePageContainer
+);

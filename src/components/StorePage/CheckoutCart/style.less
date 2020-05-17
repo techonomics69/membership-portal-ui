@@ -1,0 +1,36 @@
+@import '../../../styles/vars.less';
+.Checkout-Cart {
+  .total {
+    text-align: right;
+    width: 100%;
+    font-size: @general-heading-2;
+  }
+  .price {
+    font-size: @general-body;
+  }
+  .quant-input {
+    font-size: @general-body;
+    height: @general-body * 2;
+  }
+  .checkout-button-wrapper {
+    text-align: right;
+    margin-top: 1rem;
+    .ant-btn {
+      padding-top: 0.2rem;
+      font-size: @general-heading-2;
+      height: @general-heading-2 * 2;
+    }
+  }
+  .table {
+    .ant-table-thead {
+      > tr > th {
+        background-color: @white;
+      }
+    }
+    .ant-table-tbody {
+    }
+    .ant-table-column-title {
+      font-size: @card-heading-1;
+    }
+  }
+}

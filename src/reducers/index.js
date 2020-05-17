@@ -8,6 +8,7 @@ import RegisterReducer from './RegisterReducer';
 import UserReducer from './UserReducer';
 import PasswordReducer from './passwordReducer';
 import ProfileReducer from './ProfileReducer';
+import StoreReducer from './StoreReducer';
 
 export default (history) =>
   combineReducers({
@@ -19,4 +20,5 @@ export default (history) =>
     user: UserReducer,
     pass: PasswordReducer,
     profile: ProfileReducer,
+    store: StoreReducer
   });

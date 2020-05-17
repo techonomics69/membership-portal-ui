@@ -1,17 +1,13 @@
 import React from 'react';
 import Icon from '@ant-design/icons';
-
+import CheckoutCart from '../../containers/store/CheckoutCart';
 import './style.less';
 import { ReactComponent as SwagIcon } from '../../assets/icons/swag-icon.svg';
 
 const StorePage = () => {
   return (
     <div className="store-page">
-      <h1>ACM Store</h1>
-      <div className="coming-soon">
-        <Icon className="temp-icon" component={SwagIcon} />
-        <p>Coming Soon!</p>
-      </div>
+      <CheckoutCart />
     </div>
   );
 };

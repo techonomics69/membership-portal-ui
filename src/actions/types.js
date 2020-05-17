@@ -24,3 +24,5 @@ export const FETCH_LEADERBOARD = 'FETCH_LEADERBOARD';
 export const LEADERBOARD_ERROR = 'LEADERBOARD_ERROR';
 
 export const FETCH_USER = 'FETCH_USER';
+
+export const ADD_ITEM = 'ADD_ITEM';
